@@ -8,6 +8,45 @@ body {
     text-align: justify;
 }
 
+.title {
+  text-align: center;
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+.container {
+  text-align: justify;
+  max-width: 600px;
+  margin: 0 auto;
+}
+
+
+.section-divider {
+  border: none;
+  height: 3px;
+  background-color: #ffffff;
+  width: 80%;
+}
+
+
+.main-title {
+  font-weight: bold;
+  color: #ffffff;
+  text-align: center;
+}
+
+
+.description {
+  color: #ffffff;
+  font-size: 1.2em;
+  text-align: left;
+}
+
+
+.title h1, .title h2 {
+  color: #ffffff;
+}
+
 header {
     padding: 20px;
     background-color: #000000;
