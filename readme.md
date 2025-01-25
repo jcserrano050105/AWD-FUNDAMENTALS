@@ -84,12 +84,14 @@ Variables store data, while data types define its kind. Input and output enable 
 7. File Structure to follow below.
 
 ```
-WD-ProjectName
+AWD-FUNDAMENTALS
 └─ assets
 |   └─ css
 |   |   └─ style.css
 |   └─ img
-|   |   └─ fileWith.jpeg/.jpg/.webp/.png
+|   |   └─ jcnamelogo.png
+|   └─ vid
+|   |   └─PinDown.io_1737300443
 |   └─ js
 |       └─ script.js
 └─ pages
@@ -98,7 +100,8 @@ WD-ProjectName
 |     |  └─ css
 |     |  |  └─ style.css
 |     |  └─ img
-|     |  |  └─ fileWith.jpeg/.jpg/.webp/.png
+|     |  |  └─ COFFESHOP.jpg
+|     |  |  └─ IT.jpg
 |     |  └─ js
 |     |     └─ script.js
 |     └─ index.html

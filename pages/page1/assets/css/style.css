@@ -1,11 +1,16 @@
-@import url('https://fonts.googleapis.com/css2?family=Rubik+Mono+One&family=Titan+One&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Rubik:ital,wght@0,300..900;1,300..900&display=swap');
 
 body {
-    font-family: Arial, sans-serif;
-    margin: 0;
-    padding: 0;
-    background-color: rgb(0, 0, 0);
-    text-align: justify;
+  font-family: "Rubik", Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #000;
+  color: #fff;
+}
+
+h1, h2 {
+  text-align: center;
+  text-shadow: 3px 3px 3px #748d84;
 }
 
 .title {
@@ -14,156 +19,172 @@ body {
   margin: 0 auto;
 }
 
-.container {
+.title h1, .title h2 {
+  margin: 0;
+  padding: 0;
+  background-color: #000;
   text-align: justify;
-  max-width: 600px;
-  margin: 0 auto;
 }
 
+.container {
+  text-align: justify;
+  max-width: 800px;
+  margin: 20px auto;
+  padding: 0 20px;
+}
 
 .section-divider {
   border: none;
   height: 3px;
-  background-color: #ffffff;
+  background-color: #fff;
   width: 80%;
+  margin: 20px auto;
 }
-
 
 .main-title {
   font-weight: bold;
-  color: #ffffff;
+  color: #fff;
   text-align: center;
 }
 
-
 .description {
-  color: #ffffff;
+  color: #fff;
   font-size: 1.2em;
   text-align: left;
 }
 
-
-.title h1, .title h2 {
-  color: #ffffff;
-}
-
 header {
-    padding: 20px;
-    background-color: #000000;
-    border-bottom: 1px solid #ddd;
-    color: aliceblue;
-    display: flex;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100px;
+  padding: 20px;
+  background-color: #000;
+  border-bottom: 1px solid #ddd;
+  color: aliceblue;
 }
 
 header img {
-    width: 150px;
+  width: 150px;
 }
 
-nav {    
-    padding: 10px 0px 0px 10px;
+nav {
+  padding: 10px;
+}
+
+nav ul {
+  padding: 0;
+  margin: 0;
 }
 
 nav ul li {
-    display: inline-block;
-    list-style-type: none;
-    margin-right: 30px;
+  display: inline-block;
+  list-style: none;
+  margin-right: 30px;
 }
 
 nav ul li a {
-    text-decoration: none;
-    color: #e6e6dd;
-    font-size: 20px;
-    position: relative;
+  text-decoration: none;
+  color: #e6e6dd;
+  font-size: 20px;
+  position: relative;
 }
 
 nav ul li a::after {
-    content: "";
-    width: 0;
-    height: 3px;
-    background: #e6e6dd;
-    position: absolute;
-    left: 0;
-    bottom: -6px;
-    transition: 0.5s;
+  content: "";
+  width: 0;
+  height: 3px;
+  background: #e6e6dd;
+  position: absolute;
+  left: 0;
+  bottom: -6px;
+  transition: 0.5s;
 }
 
 nav ul li a:hover::after {
-    width: 100%;
-}
-
-h1, h2 {
-    text-align: center;
-    text-shadow: 3px 3px 3px #748d84;
-}
-
-.container {
-    max-width: 800px;
-    margin: 20px auto;
-    padding: 0 20px;
+  width: 100%;
 }
 
 .bucket-item {
-    background-color: #000000;
-    border-radius: 5px;
-    padding: 20px;
-    margin-bottom: 20px;
-    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
-    color: #e6e6dd;
+  position: relative;
+  background-color: #222;
+  border-radius: 8px;
+  margin: 20px auto;
+  padding: 20px;
+  max-width: 800px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.5);
+  cursor: pointer;
+  overflow: hidden;
+  transition: transform 0.3s ease-in-out;
+}
+
+.bucket-item:hover {
+  transform: scale(1.05);
 }
 
 .bucket-item h2 {
-    margin-top: 0;
-    text-shadow: none;
-    text-align: left;
+  margin: 0;
 }
 
 .bucket-item p {
-    margin-bottom: 10px;
+  margin-bottom: 10px;
+}
+
+.demo-container {
+  display: none;
+  background-color: rgba(0, 0, 0, 0.8);
+  color: #fff;
+  padding: 15px;
+  border-radius: 5px;
+  margin-top: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+  text-align: left;
+}
+
+.bucket-item:hover .demo-container {
+  display: block;
+}
+
+.demo-output {
+  margin-top: 10px;
+  color: lightgreen;
+  font-family: monospace;
 }
 
 .go-to-top-container {
-    position: sticky;
-    margin-left: 3%;
-    bottom: 50px;
-    z-index: 999;
+  position: sticky;
+  margin-left: 3%;
+  bottom: 50px;
+  z-index: 999;
 }
 
 .go-to-top {
-    font-size: 15px;
-    text-decoration: none;
-    background-color: #2b2b2b;
-    color: #ddd;
-    padding: 10px 10px;
-    border: none;
-    border-radius: 5px;
-    cursor: pointer;
+  font-size: 15px;
+  text-decoration: none;
+  background-color: #2b2b2b;
+  color: #ddd;
+  padding: 10px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
 }
 
 .go-to-top:hover {
-    background-color: #ddd;
-    color: #2b2b2b;
+  background-color: #ddd;
+  color: #2b2b2b;
 }
 
 .light a {
-    text-shadow: 5px 5px 10px #9ff9ff;
+  text-shadow: 5px 5px 10px #9ff9ff;
 }
 
 .wallpaper {
-    position: absolute;
-    object-fit: cover;
-    z-index: -1;
-    width: 100%;
-    height: 100vh;
-    overflow: hidden;
-    filter: sepia(0.4) hue-rotate(-10deg) opacity(0.6);
-  }
-
-header {
-  display: flex; /* Enables flexbox */
-  justify-content: center; /* Centers content horizontally */
-  align-items: center; /* Centers content vertically */
-  height: 100px; /* Sets a fixed height for the header */
-  background-color: black; /* Example background color */
+  position: absolute;
+  object-fit: cover;
+  z-index: -1;
+  width: 100%;
+  height: 100vh;
+  filter: sepia(0.4) hue-rotate(-10deg) opacity(0.6);
 }
 
 header .header-buttons button:hover {
@@ -174,21 +195,19 @@ header .header-buttons button:hover {
   font-family: "Open Sans", sans-serif;
   font-size: 16px;
   letter-spacing: 2px;
-  text-decoration: none; /* Removes underline for anchor links */
   text-transform: uppercase;
   color: #000;
   cursor: pointer;
   border: 3px solid;
   padding: 0.25em 0.5em;
-  box-shadow: 1px 1px 0px 0px, 2px 2px 0px 0px, 3px 3px 0px 0px, 4px 4px 0px 0px, 5px 5px 0px 0px;
+  box-shadow: 1px 1px 0, 2px 2px 0, 3px 3px 0, 4px 4px 0, 5px 5px 0;
   position: relative;
   user-select: none;
-  -webkit-user-select: none;
-  touch-action: manipulation;
+  transition: all 0.3s ease;
 }
 
 .button-54:active {
-  box-shadow: 0px 0px 0px 0px;
+  box-shadow: none;
   top: 5px;
   left: 5px;
 }
@@ -200,7 +219,7 @@ header .header-buttons button:hover {
 }
 
 .animated-button-link {
-  text-decoration: none; /* Remove underline from links */
+  text-decoration: none;
   margin: 0 10px;
 }
 
@@ -244,15 +263,15 @@ header .header-buttons button:hover {
 
 main {
   position: relative;
-  height: calc(100vh - 140px); /* Adjust height to account for header and footer */
+  height: calc(100vh - 140px);
 }
 
 .text-container {
-    text-align: justify; /* This will justify the text */
-    max-width: 800px; /* Optional: Limit the width for better readability */
-    margin: 0 auto; /* Center the container */
+  text-align: justify;
+  max-width: 800px;
+  margin: 0 auto;
 }
 
 .text-container h2 {
-    text-align: center; /* Center the heading if desired */
+  text-align: center;
 }
